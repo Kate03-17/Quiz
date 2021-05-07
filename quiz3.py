@@ -115,6 +115,7 @@ else:
 # here we let the user add new players or teams,
 # in case user chooses to enter 1 name or id we use execute
 # in case user chooses to enter more than 1 name or id we use executemany
+# we also print the information taken from API here (objective N3)
 
 # example names for test input: MarShon Brooks, Lorenzo Brown, Alex Abrines, Tyler Davis, Keenan Evans
 # example ids for text input: anything in range(5...30) including 30.
