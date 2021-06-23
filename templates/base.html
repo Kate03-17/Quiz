@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+
+            <h1>My Books</h1>
+        </header>
+        <div class="content">
+            <form method="post">
+                {% block content %}
+                    <h2>მოგესალმებით!</h2>
+                    <p>ჩვენი საიტი წარმოგიდგენთ მრავალ საინტერესო წიგნს</p>
+                    <p>გთხოვთ გაიაროთ რეგისტრაცია და შეხვიდეთ თქვენს პროფილზე</p>
+                {% endblock %}
+
+            </form>
+            <aside>
+                <ul>
+                    {%if 'username' in session%}
+                    <li class="mpg"><a href="{{url_for('user_page')}}">my page</a></li>
+                    {%endif%}
+                    <li><a href="{{url_for('home')}}">Home</a></li>
+                    <li><a href="{{url_for('book_page')}}">Books</a></li>
+                    <li><a href="{{url_for('add_books')}}">Add Books</a></li>
+                    {%if 'username' in session%}
+                    <li><a href="{{url_for('logout')}}">Log out</a></li>
+                    {% else %}
+                    <li><a href="{{url_for('login')}}">Sign in</a></li>
+                    {%endif%}
+
+                </ul>
+            </aside>
+        </div>
+        <footer></footer>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+{%extends 'base.html'%}
+
+{% block content %}
+    {% for each in all_books %}
+        <div class="item">
+            <div class="item_main">
+                <div class="img_fitter">
+                    <img src="static/img/bk.jpg">
+                    <div class="author">{{each.author}}</div>
+                </div>
+                <div class="text">
+                    <h3>{{each.title}}</h3>
+
+                </div>
+            </div>
+
+        </div>
+
+    {%endfor%}
+{% endblock %}

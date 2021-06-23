@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    height: 600px;
+
+}
+header, footer{
+    background-color: #76cf76;
+}
+.content{
+    min-height: 450px;
+    display: flex;
+    background-color: #deeed8;
+}
+form, aside{
+    height: 90%;
+}
+header, .content, footer{
+    border: solid 1px grey;
+    margin: 2px;
+}
+header{
+    border-radius: 15px 15px 0px 0px;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+header h1{
+    margin: auto;
+}
+form{
+
+    width: 80%;
+    height: 100%;
+    text-align: center;
+
+
+}
+form input{
+    margin-top: 25px;
+    padding: 10px;
+    border: none;
+    border-bottom: solid 2px #76cf76;
+}
+hr{
+    border: solid 2px #5ae385;
+}
+form button{
+    height: 40px;
+    width: 10%;
+    background-color: #76cf76;
+    border: none;
+    border-radius: 5px;
+}
+aside{
+    width: 20%;
+    height: 100%;
+    color: green;
+
+}
+aside ul li{
+    list-style-type: none;
+    padding: 10px;
+    background-color: lightgray;
+    border-bottom: solid 2px #797979;
+}
+aside ul li:hover{
+    background-color: #f97fbc;
+}
+aside ul{
+    margin: 0;
+}
+footer{
+    height: 10%;
+    border-radius: 0px 0px 30px 30px;
+}
+button{
+    font-weight: bold;
+}
+button:hover{
+    background-color: black;
+    color: white;
+}
+.mpg{
+    background-color: black;
+    padding: 15px;
+}
+.error{
+    color: red;
+    text-decoration:underline
+}
+.info{
+    color: lightblue;
+}
+.img_fitter{
+    flex: 2;
+    margin-top: 5px;
+}
+.text{
+    flex: 3;
+}
+.item{
+    height: 47%;
+    margin: 5px;
+    border: solid 2px black;
+    display: flex;
+    flex-direction: column;
+
+}
+.item_main{
+    /* flex: 18; */
+    border-bottom: solid 1px #d2d2d2;
+    display: flex;
+}
+.img_fitter img{
+    border-radius: 10px 10px 0px 0px;
+    height: 70%;
+    width: 100%;
+
+}
+.img_fitter .author{
+    border-radius: 0px 0px 10px 10px;
+    color: black;
+    height: 20%;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+h3{
+    color: #4ab551;
+    margin-left: 10px;
+}
